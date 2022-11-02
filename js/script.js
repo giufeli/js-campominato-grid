@@ -5,6 +5,8 @@ const buttonGenera = document.querySelector('.button')
 buttonGenera.addEventListener('click', function() {
     const level = document.querySelector('.difficoltà').value;
 
+    eleGrid.replaceChildren()
+
     if(level =='facile'){
         for(let i = 0; i < 100; i++){
             const eleCell = document.createElement('div')
